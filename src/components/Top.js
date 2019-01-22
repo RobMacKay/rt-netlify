@@ -3,7 +3,7 @@ import logo from '../img/logo.svg'
 
 export default function Top() {
   return (
-    <div className="hero">
+    <div className="hero headarea">
 
         <div className="hero-body">
             <div className="container has-text-centered">
