@@ -20,7 +20,7 @@ export default function Icon(props) {
   return (
     <div className="content has-text-centered">
       <h2>{number}</h2>
-      <img src={imgsrc} style={{height: "60px"}} />
+      <img src={imgsrc} alt={icon} style={{height: "60px"}} />
       <p>{text}</p>
     </div>
   )
