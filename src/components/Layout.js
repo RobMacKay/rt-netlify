@@ -1,8 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
-
-import Navbar from '../components/Navbar'
+import Video from './Video'
+import Top from './Top'
+//import Navbar from '../components/Navbar'
 import './all.sass'
 
 const TemplateWrapper = ({ children }) => (
@@ -19,6 +20,7 @@ const TemplateWrapper = ({ children }) => (
     `}
     render={data => (
       <div>
+        <Video />
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
@@ -36,7 +38,7 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <Navbar />
+        <Top />
         <div>{children}</div>
       </div>
     )}
