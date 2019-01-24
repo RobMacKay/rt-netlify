@@ -47,11 +47,11 @@ export default class Form extends Component {
             <div className="field is-grouped is-grouped-centered">
                 
                     <a href="http://google.com" className="button is-primary">
-                    Submit
+                    Start Test
                     </a>
                 
                     <a href="http://google.com" className="button is-light">
-                    Cancel
+                    Cancel Test
                     </a>
                 
             </div>
