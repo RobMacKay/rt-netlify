@@ -43,7 +43,7 @@ export default class Form extends Component {
         </div>
 
         <div className="field is-horizontal">
-        <div class="field-body">
+        <div className="field-body">
             <div className="field is-grouped is-grouped-centered">
                 
                     <a href="http://google.com" className="button is-primary">
