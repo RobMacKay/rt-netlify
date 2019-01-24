@@ -17,7 +17,7 @@ export default class Form extends Component {
             </div>
             <div className="field">
             <p className="control is-expanded has-icons-left has-icons-right">
-                <input className="input is-success" type="email" placeholder="Email" value="alex@smith.com" />
+                <input className="input is-success" type="email" placeholder="Email" value="" />
                 <span className="icon is-small is-left">
                     <i className="fas fa-envelope"></i>
                 </span>
