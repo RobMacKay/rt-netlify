@@ -14,7 +14,10 @@ export default function Intro() {
             <li>Explore the Reactivation rates we can provide</li>
           </ul>
         </div>
-        <div className="column is-half"><Form /></div>
+        <div className="column is-half">
+        <h1 className="is-uppercase">we know how to communicate with your players</h1>
+        <Form />
+        </div>
       </div>
     </div>
     </section>

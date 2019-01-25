@@ -5,18 +5,18 @@ import Layout from "../../components/Layout"
 export default function StepOne() {
   return (
     <Layout>
-    <section className="section">
+    <section className="section has-text-centered">
         <div className="container">
-            <div className="columns">
-                <div className="column is-half">
-                    <h3>Select your Vertical</h3>
+            <div className="columns has-text-white">
+                <div className="column is-half ">
+                    <h3>Choose your current verification method</h3>
                 </div>
                 <div className="column is-half">
-                    <h3>Select your Markets</h3>                    
+                    <h3>Your Average Wagering Requirements on Bonuses?</h3>                    
                 </div>
             </div>
             <div className="container">
-                    <Link to="/results/">View Results</Link>
+                    <Link to="/results/" className="nav-but">View Results</Link>
             </div>
         </div>
     </section>

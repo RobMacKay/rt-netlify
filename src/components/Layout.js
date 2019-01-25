@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 import Header from './Header'
+import Footer from './Footer'
 //import Navbar from '../components/Navbar'
 import './all.sass'
 
@@ -30,7 +31,7 @@ const TemplateWrapper = ({ children }) => (
 	
 	        <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400" />
 	        <meta name="theme-color" content="#fff" />
-
+          <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 	        <meta property="og:type" content="business.business" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
@@ -38,6 +39,7 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
         <Header />
         <div>{children}</div>
+        <Footer />
       </div>
     )}
   />

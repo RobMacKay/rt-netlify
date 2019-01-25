@@ -8,7 +8,7 @@ export default function Header() {
         <div className="columns">
             <div className="column is-one-fifth">
             <Link to="/">
-            <img src={logo} alt="Reactiviation Group" style={{maxHeight: 200, minHeight: 200}} />
+            <img src={logo} alt="Reactiviation Group" style={{maxHeight: 145, minHeight: 145}} />
             </Link>
             </div>
             <div className="column"></div>
