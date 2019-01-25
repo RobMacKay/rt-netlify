@@ -44,25 +44,19 @@ $body-color: #000
 .margin-top-0
   margin-top: 0 !important
 
-@import "~bulma"
+@import "~bulma/bulma.sass"
 
-$background: #5e7989
+$background: #d3e6ee
 
 html
-  background-color: $background
-
-#myVideo
-  position: fixed
-  top: 50%
-  left: 50%
-  min-width: 100%
+  background: $background
+  background: -moz-linear-gradient(45deg, #d3e6ee 0%, #7db9e8 100%)
+  background: -webkit-linear-gradient(45deg, #d3e6ee 0%,#7db9e8 100%)
+  background: linear-gradient(45deg, #d3e6ee 0%,#7db9e8 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3e6ee', endColorstr='#7db9e8',GradientType=1 )
+  background-repeat: no-repeat
+  background-size: cover
   min-height: 100%
-  max-width: unset
-  width: auto
-  height: auto
-  z-index: -100
-  -webkit-transform: translateX(-50%) translateY(-50%)
-  transform: translateX(-50%) translateY(-50%)
 
 .headarea
   font-size: $size-4
@@ -73,6 +67,7 @@ html
 .intro
   background-color: #fff
   padding: 1.5rem 2rem 2.5rem
+  box-shadow: 0 0 3px
   h2 
     padding-bottom: 1.5rem
     border-bottom: 2px solid #ccc
