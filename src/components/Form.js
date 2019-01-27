@@ -22,7 +22,7 @@ export default class Form extends Component {
         </div>
         <div className="field">
             <div className="control">
-                <Link to="/step/1/" className="nav-but">Start Test</Link>
+                <Link to="/step/1/" state={{test: "test"}} className="nav-but">Start Test</Link>
             </div>
         </div>
       </form>

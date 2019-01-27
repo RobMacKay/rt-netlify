@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Top() {
   return (
-    <div class="section">
+    <div className="section">
       <div className="hero">
           <div className="hero-body">
               <div className="container is-size-4-mobile">

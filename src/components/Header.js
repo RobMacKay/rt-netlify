@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 export default function Header() {
   return (
-    <section class="section">
+    <section className="section">
         <div className="columns">
             <div className="column is-one-fifth">
             <Link to="/">

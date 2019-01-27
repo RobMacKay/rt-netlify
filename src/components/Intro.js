@@ -1,5 +1,4 @@
 import React from 'react'
-//import Icon from './Icon'
 import Form from './Form'
 import network from "../img/steps/network.svg"
 import heads from "../img/steps/heads.svg"

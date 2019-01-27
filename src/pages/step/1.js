@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from "../../components/Layout"
 
-export default function StepOne() {
+export default function StepOne(props) {
+    console.log(props.location.state.pleasant)
   return (
     <Layout>
     <section className="section has-text-centered">
