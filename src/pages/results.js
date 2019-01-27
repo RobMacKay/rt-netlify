@@ -1,7 +1,10 @@
 import React from 'react'
 import Layout from "../components/Layout"
 
-export default function StepOne() {
+export default function StepOne(props) {
+  
+  console.log("Results:", props.location.state)
+  
   return (
     <Layout>
     <section className="section has-text-centered">
