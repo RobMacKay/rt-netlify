@@ -2,6 +2,22 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from "../../components/Layout"
 
+var stepthree = {varification: [], wagering: []}
+
+function changeing(e) {
+
+    let item = e.target
+
+    if(item.name === "interval")
+        stepthree.interval = item.value
+    
+    if(item.name === "size")
+        stepthree.size = item.value
+
+    console.log(stepthree)
+
+}
+
 export default function StepOne(props) {
 
     const user = props.location.state.user
@@ -17,14 +33,14 @@ console.log("step3:", props.location.state)
             <div className="columns has-text-white">
                 <div className="column is-half ">
                     <h3>Choose your current verification method</h3>
-                    <select multiple name="varification">
+                    <select multiple name="varification" onChange={(e) => changeing(e)}>
                         <option value="phone">Phone</option>
                         <option value="email">Email</option>
                     </select>
                 </div>
                 <div className="column is-half">
                     <h3>Your Average Wagering Requirements on Bonuses?</h3>
-                    <select name="wagering">
+                    <select name="wagering" onChange={(e) => changeing(e)}>
                         <option value="35lt">35LT</option>
                         <option value="35gt">35GT</option>
                     </select>
@@ -32,7 +48,7 @@ console.log("step3:", props.location.state)
                 </div>
             </div>
             <div className="container">
-                    <Link to="/results/" state={{user:user, stepone:stepone, steptwo:steptwo, stepthree: {varification: ['phone', 'email'], average: "35lt"}}} className="nav-but">View Results</Link>
+                    <Link to="/results/" state={{user:user, stepone:stepone, steptwo:steptwo, stepthree:stepthree}} className="nav-but">View Results</Link>
             </div>
         </div>
     </section>
