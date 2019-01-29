@@ -14,8 +14,10 @@ function changeing(e) {
         stepone.vertical = item.value
     
     if(item.name === "markets")
-        stepone.markets = item.value
+        stepone.markets.push(item.value)
 
+    stepone.markets.unique()
+    
         console.log(stepone)
 
 }

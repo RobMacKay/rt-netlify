@@ -2,17 +2,17 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from "../../components/Layout"
 
-var stepthree = {varification: [], wagering: []}
+var stepthree = {varification: [], wagering: null}
 
 function changeing(e) {
 
     let item = e.target
 
-    if(item.name === "interval")
-        stepthree.interval = item.value
+    if(item.name === "varification")
+        stepthree.varification.push(item.value).unique()
     
-    if(item.name === "size")
-        stepthree.size = item.value
+    if(item.name === "wagering")
+        stepthree.wagering = item.value
 
     console.log(stepthree)
 

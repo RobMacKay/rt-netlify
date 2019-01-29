@@ -11,6 +11,34 @@ export default function StepOne(props) {
           <div className="container">
             <h2> Amount of reactivated players <br />
             <b>78732147</b></h2>
+            <h3>The data from the entries</h3>
+            <ul>
+              <li>User:
+                <ul>
+                  <li>{props.location.state.user.name}</li>
+                  <li>{props.location.state.user.company}</li>
+                  <li>{props.location.state.user.email}</li>
+                </ul>
+              </li>
+              <li>Step 1:
+                <ul>
+                  <li>{props.location.state.stepone.vertical}</li>
+                  <li>{props.location.state.stepone.markets.toString()}</li>
+                </ul>
+              </li>
+              <li>Step 2:
+                <ul>
+                  <li>{props.location.state.steptwo.interval}</li>
+                  <li>{props.location.state.steptwo.size}</li>
+                </ul>
+              </li>
+              <li>Step 3:
+                <ul>
+                  <li>{props.location.state.stepthree.varification.toString()}</li>
+                  <li>{props.location.state.stepthree.wagering}</li>
+                </ul>
+              </li>
+            </ul>
           </div>
     </section>
     <section className="section has-text-centered">
@@ -55,6 +83,8 @@ export default function StepOne(props) {
           
           <p>If you have any other quantities, verticals or additional markets get in touch with Reactivation Group. We strive to always be as flexible as possible to meet your needs.</p>
           
+          <p>Your results have been sent to your email. If you have any other questions, please contact us at</p>
+
           <p><b>harpo.lilja@reactivationgroup.com</b></p>
 
           <p><b>+34 659 646 536</b></p>
