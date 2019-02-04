@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from "../components/Layout"
 
-export default function StepOne(props) {
+export default function Results(props) {
 
   const { user } = props.location.state.state
   
