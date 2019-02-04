@@ -72,9 +72,18 @@ export default class Form extends Component {
     }
 
   render() {
+
+    let path
+
+    if(typeof window !== undefined) {
+        path = window.location.pathname
+    } else {
+        path = "/"
+    }
+
     return (
       <form method="POST" >
-        {typeof window !== undefined && window.location.pathname === "/" && (
+        {path === "/" && (
             <React.Fragment>
                 <Text name="name" placeholder="Name" change={this.handleChange} />
                 <Text name="company" placeholder="Company" change={this.handleChange} />
@@ -83,7 +92,7 @@ export default class Form extends Component {
             </React.Fragment>
             )
         }
-        {typeof window !== undefined && window.location.pathname === "/step/1/" && (
+        {path === "/step/1/" && (
             <React.Fragment>
                 <Select name="vertical" options={[{value:'casinos', name:'Casinos'}, {value:'sports', name:'Sports'}]} change={this.handleChange}/>
                 <Select name="markets" options={[{value:'no', name:'Norway'}, {value:'es', name:'Spain'}, {value:'fr', name:'France'}]} change={this.handleChange}/>
@@ -92,7 +101,7 @@ export default class Form extends Component {
             </React.Fragment>
         )
         }
-        {typeof window !== undefined && window.location.pathname === "/step/2/" && (
+        {path === "/step/2/" && (
             <React.Fragment>
                 <Slider min="1" max="36" name="interval" change={this.handleChange} />
                 <Slider min="0" max="100000" name="inactive" change={this.handleChange} />
@@ -102,7 +111,7 @@ export default class Form extends Component {
             </React.Fragment>
         )
         }
-        {typeof window !== undefined && window.location.pathname === "/step/3/" && (
+        {path === "/step/3/" && (
             <React.Fragment>
                 <Select name="wagering" options={[{value:'gt', name:'GT35'}, {value:'lt', name:'LT35'}]} change={this.handleChange}/>
                 <Button name="next" type="link" to="/results/" value="View Results" handleClick={this.handleClick} />
