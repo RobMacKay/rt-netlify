@@ -75,7 +75,7 @@ export default class Form extends Component {
 
     let path
 
-    if(typeof window !== undefined) {
+    if(typeof window !== 'undefined') {
         path = window.location.pathname
     } else {
         path = "/"
