@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 
 export default function Results(props) {
 
-  const { user } = props.location.state.state
+  //const { user } = props.location.state.state
   
   return (
     <Layout>
@@ -13,31 +13,7 @@ export default function Results(props) {
             <b>78732147</b></h2>
             <h3>The data from the entries</h3>
             <ul>
-              <li><b>User:</b>
-                <ul>
-                  <li>{user.name}</li>
-                  <li>{user.company}</li>
-                  <li>{user.email}</li>
-                </ul>
-              </li>
-              <li><b>Step 1:</b>
-                <ul>
-                  <li>{user.vertical}</li>
-                  <li>{user.markets.toString()}</li>
-                </ul>
-              </li>
-              <li><b>Step 2:</b>
-                <ul>
-                  <li>{user.interval}</li>
-                  <li>{user.size}</li>
-                </ul>
-              </li>
-              <li><b>Step 3:</b>
-                <ul>
-                  <li>{user.varification.toString()}</li>
-                  <li>{user.wagering}</li>
-                </ul>
-              </li>
+              
             </ul>
           </div>
     </section>
