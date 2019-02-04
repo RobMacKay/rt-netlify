@@ -74,7 +74,7 @@ export default class Form extends Component {
   render() {
     return (
       <form method="POST" >
-        {window.location.pathname === "/" && (
+        {typeof window !== undefined && window.location.pathname === "/" && (
             <React.Fragment>
                 <Text name="name" placeholder="Name" change={this.handleChange} />
                 <Text name="company" placeholder="Company" change={this.handleChange} />
@@ -83,7 +83,7 @@ export default class Form extends Component {
             </React.Fragment>
             )
         }
-        {window.location.pathname === "/step/1/" && (
+        {typeof window !== undefined && window.location.pathname === "/step/1/" && (
             <React.Fragment>
                 <Select name="vertical" options={[{value:'casinos', name:'Casinos'}, {value:'sports', name:'Sports'}]} change={this.handleChange}/>
                 <Select name="markets" options={[{value:'no', name:'Norway'}, {value:'es', name:'Spain'}, {value:'fr', name:'France'}]} change={this.handleChange}/>
@@ -92,7 +92,7 @@ export default class Form extends Component {
             </React.Fragment>
         )
         }
-        {window.location.pathname === "/step/2/" && (
+        {typeof window !== undefined && window.location.pathname === "/step/2/" && (
             <React.Fragment>
                 <Slider min="1" max="36" name="interval" change={this.handleChange} />
                 <Slider min="0" max="100000" name="inactive" change={this.handleChange} />
@@ -102,7 +102,7 @@ export default class Form extends Component {
             </React.Fragment>
         )
         }
-        {window.location.pathname === "/step/3/" && (
+        {typeof window !== undefined && window.location.pathname === "/step/3/" && (
             <React.Fragment>
                 <Select name="wagering" options={[{value:'gt', name:'GT35'}, {value:'lt', name:'LT35'}]} change={this.handleChange}/>
                 <Button name="next" type="link" to="/results/" value="View Results" handleClick={this.handleClick} />
