@@ -2,8 +2,8 @@ import React from 'react'
 import Layout from "../components/Layout"
 
 export default function StepOne(props) {
-  
-  console.log("Results:", props.location.state)
+
+  const { user } = props.location.state.state
   
   return (
     <Layout>
@@ -13,29 +13,29 @@ export default function StepOne(props) {
             <b>78732147</b></h2>
             <h3>The data from the entries</h3>
             <ul>
-              <li>User:
+              <li><b>User:</b>
                 <ul>
-                  <li>{props.location.state.user.name}</li>
-                  <li>{props.location.state.user.company}</li>
-                  <li>{props.location.state.user.email}</li>
+                  <li>{user.name}</li>
+                  <li>{user.company}</li>
+                  <li>{user.email}</li>
                 </ul>
               </li>
-              <li>Step 1:
+              <li><b>Step 1:</b>
                 <ul>
-                  <li>{props.location.state.stepone.vertical}</li>
-                  <li>{props.location.state.stepone.markets.toString()}</li>
+                  <li>{user.vertical}</li>
+                  <li>{user.markets.toString()}</li>
                 </ul>
               </li>
-              <li>Step 2:
+              <li><b>Step 2:</b>
                 <ul>
-                  <li>{props.location.state.steptwo.interval}</li>
-                  <li>{props.location.state.steptwo.size}</li>
+                  <li>{user.interval}</li>
+                  <li>{user.size}</li>
                 </ul>
               </li>
-              <li>Step 3:
+              <li><b>Step 3:</b>
                 <ul>
-                  <li>{props.location.state.stepthree.varification.toString()}</li>
-                  <li>{props.location.state.stepthree.wagering}</li>
+                  <li>{user.varification.toString()}</li>
+                  <li>{user.wagering}</li>
                 </ul>
               </li>
             </ul>

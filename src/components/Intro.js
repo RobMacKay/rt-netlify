@@ -16,7 +16,7 @@ export default function Intro() {
             <li className="is-size-2 is-flex"><div className="text">Explore the Reactivation rates we can provide</div><div className="icon"> <img src={graph} alt="Rates" /></div></li>
           </ul>
         </div>
-        <div className="column is-half">
+        <div className="column is-half formbox">
         <h1 className="is-uppercase is-size-1">we know how to communicate with your players</h1>
         <Form />
         </div>

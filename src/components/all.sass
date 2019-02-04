@@ -1,4 +1,7 @@
 @import "~bulma/sass/utilities/initial-variables"
+@font-face 
+  font-family: 'babas'
+  src: url('/fonts/BebasNeue-Regular.otf')
 
 // Config vars
 // Kalidi logo brand color: #FD461E
@@ -60,9 +63,16 @@ html
 
 body
   color: #FFF
+  font-family: 'bebas', sans-serif
 
 .inverse
   color: $background
+
+input::placeholder
+  color: #FFF
+
+input::focus
+  outline: 0
 
 .nav-but
   width: 300px
@@ -83,10 +93,21 @@ body
     color: #fff
 
 .intro
+  li 
+    margin: 0px 0px 3rem
   .text
     width: 60%
-    padding: 0.5rem
+    padding: 0.5rem 2rem 0.5rem 0.5rem
+    font-size: 1.4rem
+    text-align: right
   .icon
     width: 40%
     height: auto
-
+    img 
+      width: 80%
+  .formbox 
+    padding: 0 3rem 
+    h1 
+      font-size: 24
+      line-height: 3.5rem
+      font-weight: bold
